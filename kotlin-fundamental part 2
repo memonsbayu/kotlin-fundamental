@@ -1,0 +1,59 @@
+Boolean
+fun main() {
+    val nilai = 66
+    val A = 90
+    val B = 80
+    val C = 70
+    val D = 60
+    val E = 50
+    if (nilai > A) {
+        println("Nilai Anda A")
+    }
+    else if (nilai < A && nilai > B){
+        println("Nilai Anda B")
+    }
+    else if (nilai < B && nilai > C) {
+        println("Nilai Anda C")
+    }
+    else if (nilai < C && nilai > D) {
+        println("Nilai Anda D")
+    }
+    else if (nilai < D && nilai > E) {
+        println("Nilai Anda E")
+    }
+    else {
+        println("Nilai Anda F")
+    }
+}
+Numbers
+fun main() {
+    val panjang = "20"
+    val lebar = 12.6
+    val tinggi = 10
+    val volume = Double
+    hitungVolume(22.0, 12.6, 11.0)
+}
+fun hitungVolume(p : Double, l : Double, t : Double) {
+    val v = p * l * t
+    println("Volume dari balok yang mempunyai panjang $p, lebar $l, dan tinggi $t, ini adalah $v")
+}
+
+Safe Calls and Elvis Operator
+fun main() {
+    var word : String? = "SMK Telkom"
+    var WordLength = word?.length
+    print("Jumlah kata dari string SMK Telkom sebanyak $WordLength")
+}
+
+String Template
+fun main() {
+    val name = "Kotlin"
+    val age = 4
+    val version = "1.3.70"
+    print("""
+        Nama saya $name
+        Saya berusia $age tahun
+        Saat ini saya sudah mencapai versi $version
+    """.trimIndent())
+}
+
